@@ -4,7 +4,7 @@ import { resolve } from "path";
 describe("Pact Provider Verification", () => {
   it("should validate the provider against the consumer contract", async () => {
     const opts = {
-        provider: 'ProductProvider2',
+        provider: 'GetProvider',
         providerBaseUrl: 'http://localhost:8080', // Replace with your provider's URL
         pactBrokerUrl: 'https://jignect-technologies-a250.pactflow.io',
         pactBrokerToken: 'SeEVlMw3J3AKI7lq1mEaTA',
@@ -12,7 +12,7 @@ describe("Pact Provider Verification", () => {
         providerVersion: '1.0.0', // Replace with your provider version
         consumerVersionSelectors: [
             {
-                consumer: 'ProductConsumer2', // Replace with your consumer name
+                consumer: 'GetConsumer', // Replace with your consumer name
                 // version: '1.0.0', // The version of the consumer contract you're verifying
                 // tag: 'dev', // Specify the tag used for the pact
                 latest: true, // Fetch the latest pact version

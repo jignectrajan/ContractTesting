@@ -5,8 +5,8 @@ import { expect as _expect } from "chai";
 const expect = _expect;
 
 const provider = new Pact({
-  consumer: "ProductConsumer2",
-  provider: "ProductProvider2",
+  consumer: "GetConsumer",
+  provider: "GetProvider",
   port: 1234,
   log: resolve(process.cwd(), "logs", "pact.log"),
   dir: resolve(process.cwd(), "pacts"),
