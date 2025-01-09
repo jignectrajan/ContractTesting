@@ -9,7 +9,8 @@ describe("Pact Provider Verification", () => {
         pactBrokerUrl: 'https://jignect-technologies-a250.pactflow.io',
         pactBrokerToken: 'SeEVlMw3J3AKI7lq1mEaTA',
         publishVerificationResult: true,
-        providerVersion: '1.0.0', // Replace with your provider version
+        providerVersion: '90a1f01efe0bae047f9eb00b3a900ad48e4a0530', // Replace with your provider version
+        providerBranch: 'main',
         consumerVersionSelectors: [
             {
                 consumer: 'GetConsumer', // Replace with your consumer name
